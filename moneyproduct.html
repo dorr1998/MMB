@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>省钱控</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/moneyproduct.css">
+</head>
+<body>
+  <!-- 头部 -->
+  <header id="header" class="header">
+    <div class="left fl">
+      <a href="javascript: history.go(-1);" >
+        <img src="./images/icback.svg" style="margin: 10px">
+      </a>
+    </div>
+    <div class="app fr">
+      <a href="javascript:;">
+        <img src="./images/header_app.png" alt="手机app下载">
+      </a>
+    </div>
+    <h1>国内折扣</h1>
+  </header>
+
+  <div id="mmain">
+    <div class="mproductshow">
+      <!-- 挖个坑 -->
+
+    </div>
+    <div class="mpinglun">
+
+    </div>
+  </div>
+
+
+  <!-- 底部 -->
+  <div class="footer">
+    <div class="top">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#" style="width:40%;">
+          <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">返回顶部
+      </a>
+    </div>
+    <div class="bottom">
+      <p>
+        <a href="javascrip:;" style="color:red">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+
+
+  <script type="text/html" id="productShowTpl">
+    {{ each result as v i }}
+    <div class="m-title">
+      <h2>{{ v.productName }}</h2>
+    </div>
+    <div class="m-info">
+      <span>{{ v.productFrom }}</span>
+      <span>{{ v.productTime }}</span>
+      <span>{{ v.productTips }}</span>
+      <span class="say">
+        <a href="#newcomment">
+          {{ v.productComCount }}
+        </a>
+      </span>
+    </div>
+    <div class="m-content">
+      <div class="pic">
+        {{# v.productImgSm}}
+      </div>
+      <div class="content">
+          海天的金标生抽酱油，采用了非转基因大豆以及小麦发酵而成，而自然鲜的口感是有些鲜甜鲜甜的感觉，非常适合用来作为日常炒菜用的调味料，当然也能用作白切系列的蘸酱调料，相信吃过美味鲜的慢友们都了解的。
+      </div>
+      <div class="lpic">
+        {{# v.productImgLg}}
+      </div>
+      <div class="city">
+        {{# v.productCity }}
+      </div>
+      <div class="golink">
+        <a href="javascrip:;">前往购买</a>
+      </div>
+      <div class="erweima">
+        <img src="./images/mmbweixin2.png" alt="">
+      </div>
+    </div>
+    
+    {{ /each }}
+  </script>
+
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/moneyproduct.js"></script>
+</body>
+</html>

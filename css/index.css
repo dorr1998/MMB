@@ -1,0 +1,96 @@
+.menu {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0;
+  background-color: #fff;
+}
+.menu .menu-item {
+  float: left;
+  width: 25%;
+  margin-top: 15px;
+}
+.menu .menu-item a {
+  display: block;
+  width: 100%;
+}
+.menu .menu-item a img {
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+.menu .menu-item a p {
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.menu .menu-item.hide {
+  display: none;
+}
+#recommenTitle {
+  height: 34px;
+  width: 100%;
+  margin-top: 5px;
+  line-height: 34px;
+  background-image: linear-gradient(to top, #ff9001, #ffae45);
+  border-bottom: 1px solid #FFC881;
+  padding: 0 10px;
+}
+#recommenTitle span {
+  color: #fff;
+  font-size: 16px;
+}
+#recommenTitle img {
+  margin-top: 7px;
+}
+.recommenContent {
+  background-color: #fff;
+}
+.recommenContent ul li {
+  padding: 14px 8px;
+  border-bottom: 1px solid #E7E7E7;
+  box-sizing: content-box;
+}
+.recommenContent ul li a {
+  display: block;
+}
+.recommenContent ul li .pic {
+  width: 110px;
+}
+.recommenContent ul li .pic img {
+  width: 100px;
+  height: 100px;
+}
+.recommenContent ul li .info {
+  padding-left: 90px;
+}
+.recommenContent ul li .info .title {
+  font-size: 15px;
+  line-height: 19px;
+  height: 57px;
+  line-height: 24px;
+}
+.recommenContent ul li .info .title span {
+  color: #ff841d;
+}
+.recommenContent ul li .info .other {
+  font-size: 12px;
+  color: #A1A1A1;
+  margin-top: 8px;
+}
+.ranking-list {
+  height: 34px;
+  width: 100%;
+  margin-top: 5px;
+  line-height: 34px;
+  background-image: linear-gradient(to top, #ff9001, #ffae45);
+  border-bottom: 1px solid #FFC881;
+  padding: 0 10px;
+}
+.ranking-list span {
+  color: #fff;
+  font-size: 16px;
+}
+.ranking-list img {
+  margin-top: 7px;
+}

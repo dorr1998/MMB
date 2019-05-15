@@ -1,0 +1,117 @@
+#header h1 {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+}
+.active {
+  color: #ff841d;
+}
+.gs-product {
+  background-color: #fff;
+}
+.gs-product .hd {
+  width: 100%;
+  height: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  background: #fff;
+}
+.gs-product .hd .filter ul li {
+  float: left;
+  width: 30%;
+  height: 0.5rem;
+}
+.gs-product .hd .filter ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: .5rem;
+  font-size: .18rem;
+}
+.gs-product .hd .filter ul li a i {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: .05rem solid #333;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  position: relative;
+  top: -0.05rem;
+  left: .05rem;
+}
+.gs-product .hd .search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0.5rem;
+  width: 10%;
+  border-left: 1px solid #ccc;
+  background: url('../images/ic_bcj.png') -20px -20px no-repeat;
+}
+.gs-product .hd .pop-box {
+  background-color: #fff;
+}
+.gs-product .hd .pop-box ul li {
+  height: 0.5rem;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.gs-product .hd .pop-box ul li a {
+  display: block;
+  padding: 0 .2rem;
+  width: 100%;
+  height: 100%;
+  line-height: .5rem;
+  font-size: .16rem;
+}
+.gs-product .content ul li {
+  width: 46%;
+  margin: 2%;
+  height: 4.2rem;
+  background-color: #fff;
+  float: left;
+  padding: 0.1rem .2rem;
+}
+.gs-product .content ul li a {
+  width: 100%;
+  height: 4.2rem;
+}
+.gs-product .content ul li .pic {
+  width: 100%;
+  text-align: center;
+}
+.gs-product .content ul li .pic img {
+  width: 3rem;
+  height: 3rem;
+}
+.gs-product .content ul li .title {
+  font-size: .12rem;
+  height: .4rem;
+  margin: .1rem 0;
+  line-height: .4rem;
+  overflow: hidden;
+}
+.gs-product .content ul li .other {
+  width: 100%;
+}
+.gs-product .content ul li .other .price {
+  float: left;
+  color: #f53111;
+  font-size: .24rem;
+}
+.gs-product .content ul li .other .btn {
+  float: right;
+  width: 1.25rem;
+  height: 0.36rem;
+  font-size: .2rem;
+  text-align: center;
+  line-height: .36rem;
+  color: #fff;
+  background-color: #ff841d;
+  border-radius: .1rem;
+}

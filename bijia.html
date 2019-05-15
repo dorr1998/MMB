@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/bijia.css">
+</head>
+<body>
+  <!-- 头部 -->
+  <header id="header" class="header">
+    <div class="logo">
+      <a href="index.html" title="慢慢买">
+        <img src="./images/header_logo.png">
+      </a>
+    </div>
+    <div class="app">
+      <a href="javascript:;">
+        <img src="./images/header_app.png" alt="手机app下载">
+      </a>
+    </div>
+  </header>
+  <!-- 搜索区域 -->
+  <div id="search" class="search">
+    <form action="#" class="search">
+      <input type="text" placeholder="请输入你想比价的商品">
+      <input type="button" value="搜索">
+    </form>
+  </div>
+  <!-- 路径导航部分 -->
+  <div id="nav" class="nav clearfix">
+    <!-- 挖个坑 -->
+  </div>
+
+  <!-- 产品展示模块 -->
+  <div id="main-productBuy">
+    <!-- 挖个大坑 -->
+  </div>
+
+  <!-- 用户评价 -->
+  <div id="pingjia">
+    <div class="title">
+      网友评价
+    </div>
+    <div class="pj-body">
+      <ul class="pj-list">
+        <!-- 挖个坑 -->
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="more">
+    <a href="#">查看更多评价 >></a>  
+  </div>
+
+  <!-- 底部 -->
+  <div class="footer">
+    <div class="top">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#" style="width:40%;">
+          <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">返回顶部
+      </a>
+    </div>
+    <div class="bottom">
+      <p>
+        <a href="javascrip:;" style="color:red">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+
+
+  <script type="text/html" id="navTpl">
+    <a href="index.html">首页</a> >
+    <a href="productlist.html?categoryid={{ result[0].categoryId}}&category={{ categoryName}}&pageid=1" id="category">{{categoryName}}</a> >
+    <a href="#" id="productName">{{ navProduct }}</a> >
+    <a href="#" class="select fr">筛选</a>
+  </script>
+
+  <script type="text/html" id="productBuy">
+    {{ each result as v i}}
+    <div class="product-bijia">
+      <div class="product-name">
+        {{ v.productName}}
+      </div>
+      <div class="product-pic">
+        {{# v.productImg}}
+      </div>
+    </div>
+    <div class="tab">
+      <ul>
+        <li class="current">
+          <a href="#">比价购买</a>
+        </li>
+        <li>
+          <a href="#">产品参数</a>
+        </li>
+        <li>
+          <a href="#">评价(111)</a>
+        </li>
+      </ul>
+    </div>
+    <div class="p-buy">
+      {{# v.bjShop}}
+    </div>
+    <div class="p-bottom">
+        * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+    </div>
+    {{ /each }}
+  </script>
+
+  <script type="text/html" id="pjTpl">
+    {{ each result as v i }}
+    <li class="pj-item">
+      <div class="pj-title clearfix">
+        <span class="yonghu fl">{{ v.comName}}</span>
+        <span class="time fr">{{ v.comTime}}  </span>
+        <span class="laiyuan fr">{{ v.comFrom}}</span>
+      </div>
+      <div class="pj-info">
+          {{ v.comContent}}
+      </div>
+    </li>
+    {{ /each}}
+  </script>
+
+
+
+  <script type="text/html" id="productBuyTpl">
+
+  </script>
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/bijia.js"></script>
+</body>
+</html>

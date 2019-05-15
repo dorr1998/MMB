@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/brand.css">
+</head>
+<body>
+  <!-- 头部 -->
+  <header id="header" class="header">
+    <div class="logo">
+      <a href="index.html" title="慢慢买">
+        <img src="./images/header_logo.png">
+      </a>
+    </div>
+    <div class="app">
+      <a href="javascript:;">
+        <img src="./images/header_app.png" alt="手机app下载">
+      </a>
+    </div>
+  </header>
+  <!-- 搜索区域 -->
+  <div id="search" class="search">
+    <form action="#" class="search">
+      <input type="text" placeholder="请输入你想比价的商品">
+      <input type="button" value="搜索">
+    </form>
+  </div>
+  <!-- 路径导航部分 -->
+  <div id="nav" class="nav clearfix">
+    <a href="index.html">首页</a> >
+    <a href="category.html">全部分类</a> >
+    <a href="#" class="select fr">筛选</a>
+  </div>
+  <!-- 热门品牌排行 -->
+  <div class="list-title">
+    平板电视哪个牌子好
+  </div>
+  
+  <!-- 品牌排行列表 -->
+  <div class="brand-list">
+    <!-- 挖坑  -->
+    
+  </div>
+
+  <!-- 平板电视产品销量排行 -->
+  <div class="list-title">
+    平板电视产品销量排行
+  </div>
+
+  <!-- 产品模块 -->
+  <div class="product-list">
+      <div id="product">
+        <!-- 挖个坑 -->
+  
+      </div>
+    </div>
+
+
+
+  <!-- 平板电视最新评论 -->
+  <div class="list-title">
+      平板电视最新评论
+  </div>
+
+
+  <!-- 第一个商品评论 -->
+  <div class="product-comm">
+    <!-- 挖坑 -->
+    
+  </div>
+
+
+
+
+  <!-- 底部 -->
+  <div class="footer">
+    <div class="top">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#" style="width:40%;">
+          <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">返回顶部
+      </a>
+    </div>
+    <div class="bottom">
+      <p>
+        <a href="javascrip:;" style="color:red">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+
+  <!-- 品牌排行列表模板 -->
+  <script type="text/html" id="brandlistTpl">
+    <ul class="category-title">
+      {{ each result as v i }}
+      <li>
+        <a href="productlist.html?categoryId=0&pageid=1">
+          <em class="top{{ i+1 }}">{{ i+1 }}</em>
+          <div class="inner">
+            <div class="tit">{{ v.brandName }}</div>
+            <p>{{ v.brandInfo }}</p>
+          </div>
+        </a>
+      </li>
+      {{ /each }}
+    </ul>
+  </script>
+
+  <!-- 对应商品列表 -->
+  <script type="text/html" id="productTpl">
+    <ul>
+      {{ each result as v i }}
+      <li class="clearfix">
+        <a href="bijia.html?productid={{ v.productId }}">
+          <div class="pic fl">
+            {{ #v.productImg }}
+          </div>
+          <div class="info">
+            <div class="title">{{ v.productName }}
+            </div>
+            <div class="other clearfix">
+              <p>{{ v.productPrice }}</p>
+              <p>
+                <span class="left">{{ v.productQuote}}</span>
+                <span class="right">{{v.productCom }}</span>
+              </p>
+              <span class="star fr">
+                <em class="star5"></em>
+              </span>
+            </div>
+          </div>
+        </a>
+      </li>
+      {{ /each}}
+    </ul>
+  </script>
+
+  <!--第一个商品评论  -->
+  <script type="text/html" id="productcommTpl">
+    <ul>
+      {{ each result as v i }}
+      <li>
+        <a href="bijia.aspx?id=211698">
+          <div class="protitl clearfix">
+            <div class="pic">
+              {{# productImg}}
+            </div>
+            <div class="tit">{{ productName }}</div>
+          </div>
+          <div class="plbox">
+            <div class="name">
+               {{ v.comName }}:
+                <span class="star">
+                  <em class="star5"></em>
+                </span>
+                <i>{{ v.comTime }}</i>
+            </div>
+            <div class="cont">
+                {{ v.comContent}}
+            </div>
+          </div>
+        </a>
+      </li>
+      {{ /each }}
+    </ul>
+  </script>
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/brand.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+h1 {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+}
+#mmain {
+  padding: .1rem .1rem;
+  background: #fff;
+}
+#mmain .mproductshow .m-title h2 {
+  font-size: 18px;
+  color: #5a5a5a;
+  margin: .15rem 0;
+}
+#mmain .mproductshow .m-info {
+  margin: .2rem 0;
+  font-size: 12px;
+  color: #999;
+}
+#mmain .mproductshow .m-info a {
+  color: #4682c5;
+}
+#mmain .mproductshow .m-content .pic img {
+  width: 1.2rem;
+  height: 1.2rem;
+  float: right;
+}
+#mmain .mproductshow .m-content .content {
+  font-size: 16px;
+  line-height: .6rem;
+  color: #606060;
+}
+#mmain .mproductshow .m-content .lpic {
+  width: 100%;
+  text-align: center;
+}
+#mmain .mproductshow .m-content .city {
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px #ccc;
+  width: 2.5rem;
+  margin: 0 auto;
+}
+#mmain .mproductshow .m-content .city #disstorck li {
+  width: 100%;
+  text-align: center;
+}
+#mmain .mproductshow .m-content .city #disstorck li a {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  padding: 0 .2rem;
+  height: .3rem;
+  line-height: .3rem;
+  border-bottom: 1px dotted #ccc;
+  text-align: center;
+}
+#mmain .mproductshow .m-content .city #disstorck li a span {
+  display: block;
+  padding: 0 .15rem;
+  text-align: left;
+}
+#mmain .mproductshow .m-content .city #disstorck li a span strong {
+  float: right;
+  color: #ff841d;
+}
+#mmain .mproductshow .m-content .golink {
+  width: 100%;
+  padding: .2rem;
+}
+#mmain .mproductshow .m-content .golink a {
+  display: block;
+  width: 100%;
+  height: .6rem;
+  background-color: #ff841d;
+  text-align: center;
+  line-height: .6rem;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+#mmain .mproductshow .m-content .erweima {
+  text-align: center;
+  margin-top: .5rem;
+  padding: .2rem;
+}
+#mmain .mproductshow .m-content .erweima img {
+  width: 100%;
+}
+#mmain .mpinglun .tit {
+  font-size: .2rem;
+  height: 0.3rem;
+  font-weight: bold;
+  color: #5A5A5A;
+  margin: .2rem 0;
+}
+#mmain .mpinglun .reply .form {
+  border: 2px solid #eee;
+}
+#mmain .mpinglun .reply .form textarea {
+  width: 100%;
+  resize: none;
+  height: 1rem;
+}
+#mmain .mpinglun .reply .form .ctrl {
+  height: .72rem;
+  background-color: #fbfbfb;
+}
+#mmain .mpinglun .reply .form .ctrl input {
+  font-size: 16px;
+  float: right;
+  height: 100%;
+  width: 2rem;
+  background-color: #ff841d;
+  color: #fff;
+}
+#mmain .mpinglun .list {
+  padding: .2rem .25rem;
+}
+#mmain .mpinglun .list > ul > li {
+  padding: .1rem .1rem .3rem;
+  margin-bottom: .3rem;
+}
+#mmain .mpinglun .list > ul > li .userimg {
+  float: left;
+}
+#mmain .mpinglun .list > ul > li .userimg img {
+  border-radius: 50%;
+  width: .78rem;
+}
+#mmain .mpinglun .list > ul > li .con {
+  overflow: hidden;
+  padding-left: .2rem;
+  color: #606060;
+}
+#mmain .mpinglun .list > ul > li .con .name {
+  font-size: 12px;
+}
+#mmain .mpinglun .list > ul > li .con .name .username {
+  float: left;
+  color: #5997c0;
+}
+#mmain .mpinglun .list > ul > li .con .name .time {
+  float: right;
+}
+#mmain .mpinglun .list > ul > li .con .content {
+  width: 100%;
+  margin-top: .1rem;
+}

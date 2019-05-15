@@ -1,0 +1,37 @@
+/*商品列表*/
+.product-list {
+  background-color: #fff;
+}
+.product-list #product ul li {
+  padding: 10px;
+  border-bottom: 1px solid #E7E7E7;
+  box-sizing: content-box;
+}
+.product-list #product ul li a {
+  display: block;
+}
+.product-list #product ul li .pic {
+  width: 110px;
+}
+.product-list #product ul li .pic img {
+  width: 100px;
+  height: 100px;
+}
+.product-list #product ul li .info {
+  padding-left: 90px;
+}
+.product-list #product ul li .info .title {
+  line-height: 19px;
+  height: 44px;
+  line-height: 24px;
+  color: #333333;
+}
+.product-list #product ul li .info .other {
+  font-size: 12px;
+  color: #A1A1A1;
+  margin-top: 8px;
+}
+.product-list #product ul li .info .other p:first-child {
+  font-size: 18px;
+  color: #EA3900;
+}

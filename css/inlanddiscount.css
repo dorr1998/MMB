@@ -1,0 +1,53 @@
+#header h1 {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+}
+.recommenContent {
+  background-color: #fff;
+}
+.recommenContent ul li {
+  width: 50%;
+  float: left;
+  border-bottom: 1px solid #E7E7E7;
+  box-sizing: content-box;
+}
+.recommenContent ul li a {
+  display: block;
+  width: 100%;
+  padding: .2rem 0 0 .25rem;
+}
+.recommenContent ul li .pic {
+  text-align: center;
+}
+.recommenContent ul li .pic img {
+  width: 2rem;
+  height: 2rem;
+}
+.recommenContent ul li .info .title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  height: .48rem;
+  overflow: hidden;
+  word-break: break-all;
+  line-height: .24rem;
+}
+.recommenContent ul li .info .title span {
+  color: #ff841d;
+}
+.recommenContent ul li .info .other {
+  font-size: 12px;
+  color: #A1A1A1;
+  margin-top: .08rem;
+}
+.recommenContent ul li .info .other p {
+  text-align: left;
+  line-height: .2rem;
+}
+.recommenContent ul li .info .other p.price {
+  color: #ff841d;
+}
